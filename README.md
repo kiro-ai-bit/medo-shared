@@ -9,6 +9,7 @@ Shared tooling packages for Medo repos (`@kiro-ai-bit/*`).
 | `@kiro-ai-bit/test-utils`    | Shared Vitest helpers: `createDeferred`, `flushPromises`, `useFakeClock`, `defineTestConfig`                            |
 | `@kiro-ai-bit/eventing`      | Event transport: per-service outbox, `broker_db.events`, sequential consumers, dead letters, zod event schemas          |
 | `@kiro-ai-bit/rate-limit`    | Fastify rate-limit plugin: in-memory sliding window, public/write/read scopes, internal-route bypass, 429+`Retry-After` |
+| `@kiro-ai-bit/contracts`     | Public-route zod DTO schemas (single source): backend validates, frontend derives types via `z.infer`                   |
 
 ## Consumption
 

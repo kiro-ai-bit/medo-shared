@@ -1,0 +1,40 @@
+{
+  "name": "@kiro-ai-bit/contracts",
+  "version": "0.1.0",
+  "description": "Medo public-route DTO contracts: zod schemas, single source for backend validation and frontend z.infer types",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiro-ai-bit/medo-shared.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@kiro-ai-bit/tsconfig": "0.1.0",
+    "@types/node": "26.6.7",
+    "typescript": "5.9.3",
+    "vitest": "5.1.1"
+  }
+}

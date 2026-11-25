@@ -1,0 +1,25 @@
+{
+  "name": "@kiro-ai-bit/eslint-config",
+  "version": "0.1.0",
+  "description": "Shared ESLint flat config (typescript-eslint + Prettier) for Medo repos",
+  "license": "MIT",
+  "type": "module",
+  "main": "./eslint.config.mjs",
+  "exports": {
+    ".": "./eslint.config.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "eslint.config.mjs"
+  ],
+  "peerDependencies": {
+    "eslint": ">=9.0.0",
+    "typescript-eslint": ">=8.0.0"
+  },
+  "dependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint-config-prettier": "10.1.8",
+    "globals": "17.14.0",
+    "typescript-eslint": "8.74.0"
+  }
+}

@@ -2,7 +2,7 @@
   "name": "medo-shared",
   "version": "0.1.0",
   "private": true,
-  "description": "Shared tooling for Medo repos: @kiro-ai-bit/{eslint-config,tsconfig,test-utils}",
+  "description": "Shared tooling for Medo repos: @kiro-ai-bit/{eslint-config,tsconfig,test-utils,eventing,rate-limit}",
   "workspaces": [
     "packages/*"
   ],

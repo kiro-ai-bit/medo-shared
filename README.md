@@ -2,11 +2,13 @@
 
 Shared tooling packages for Medo repos (`@kiro-ai-bit/*`).
 
-| Package                      | Purpose                                                                                                               |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `@kiro-ai-bit/eslint-config` | Flat ESLint config: `@eslint/js` + `typescript-eslint` recommended + `eslint-config-prettier`                         |
-| `@kiro-ai-bit/tsconfig`      | Strict `tsc --noEmit` presets: `base.json` (NodeNext), `node.json`, `nextjs.json` (bundler resolution + JSX preserve) |
-| `@kiro-ai-bit/test-utils`    | Shared Vitest helpers: `createDeferred`, `flushPromises`, `useFakeClock`, `defineTestConfig`                          |
+| Package                      | Purpose                                                                                                                 |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `@kiro-ai-bit/eslint-config` | Flat ESLint config: `@eslint/js` + `typescript-eslint` recommended + `eslint-config-prettier`                           |
+| `@kiro-ai-bit/tsconfig`      | Strict `tsc --noEmit` presets: `base.json` (NodeNext), `node.json`, `nextjs.json` (bundler resolution + JSX preserve)   |
+| `@kiro-ai-bit/test-utils`    | Shared Vitest helpers: `createDeferred`, `flushPromises`, `useFakeClock`, `defineTestConfig`                            |
+| `@kiro-ai-bit/eventing`      | Event transport: per-service outbox, `broker_db.events`, sequential consumers, dead letters, zod event schemas          |
+| `@kiro-ai-bit/rate-limit`    | Fastify rate-limit plugin: in-memory sliding window, public/write/read scopes, internal-route bypass, 429+`Retry-After` |
 
 ## Consumption
 

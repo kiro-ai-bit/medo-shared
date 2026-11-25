@@ -12,8 +12,8 @@ Shared tooling packages for Medo repos (`@kiro-ai-bit/*`).
 
 Repos consume via GitHub Packages (exact-pinned) or `npm link` during local dev — see Map 6 ticket 02 conventions.
 
-- ESLint: root `eslint.config.mjs` → `import config from '@kiro-ai-bit/eslint-config'; export default config;` (spread/append repo-specific overrides after).
-- tsconfig: `"extends": "@kiro-ai-bit/tsconfig/node.json"` (backend) or `"@kiro-ai-bit/tsconfig/nextjs.json"` (frontend).
+- ESLint: root `eslint.config.mjs` → `import config from '@kiro-ai-bit/eslint-config'; export default config;` then append repo-specific overrides (e.g. Next.js repos add `eslint-config-next`/react rules after the shared config).
+- tsconfig: `"extends": "@kiro-ai-bit/tsconfig/node.json"` (backend) or `"@kiro-ai-bit/tsconfig/nextjs.json"` (frontend). `node.json` requires `@types/node` as a devDependency in the consuming repo.
 - test-utils: import helpers from `@kiro-ai-bit/test-utils` in tests (Vitest peer dep).
 
 ## Scripts

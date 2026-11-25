@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Shared strict tsconfig presets for Medo repos",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiro-ai-bit/medo-shared.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
   "files": [
     "base.json",
     "node.json",

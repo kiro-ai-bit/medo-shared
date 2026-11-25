@@ -4,6 +4,14 @@
   "description": "Shared Vitest helpers for Medo repos",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiro-ai-bit/medo-shared.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -24,7 +32,7 @@
     "vitest": ">=3.0.0"
   },
   "devDependencies": {
-    "@kiro-ai-bit/tsconfig": "*",
+    "@kiro-ai-bit/tsconfig": "0.1.0",
     "@types/node": "26.6.7",
     "typescript": "5.9.3",
     "vitest": "5.1.1"

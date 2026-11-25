@@ -4,6 +4,14 @@
   "description": "Shared ESLint flat config (typescript-eslint + Prettier) for Medo repos",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiro-ai-bit/medo-shared.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
   "main": "./eslint.config.mjs",
   "exports": {
     ".": "./eslint.config.mjs",
@@ -13,8 +21,7 @@
     "eslint.config.mjs"
   ],
   "peerDependencies": {
-    "eslint": ">=9.0.0",
-    "typescript-eslint": ">=8.0.0"
+    "eslint": ">=10.0.0"
   },
   "dependencies": {
     "@eslint/js": "10.0.1",

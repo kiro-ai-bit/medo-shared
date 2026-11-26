@@ -51,6 +51,7 @@ const patientMedicine = {
   prescribingDoctor: 'Dr. X',
   dosage: '500mg',
   dosesRemaining: 12,
+  refillThreshold: 6,
   price: 5.5,
   pharmacyName: 'Boots',
   createdAt: NOW,

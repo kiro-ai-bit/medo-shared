@@ -102,6 +102,7 @@ export const PatientMedicineSummaryDtoSchema = z.strictObject({
   prescribingDoctor: z.string(),
   dosage: z.string(),
   dosesRemaining: z.number().int().min(0),
+  refillThreshold: z.number().int().min(0),
   price: z.number().min(0),
   pharmacyName: z.string(),
   createdAt: isoDateTimeSchema,
@@ -120,6 +121,7 @@ export const CreateMedicineRequestSchema = z.strictObject({
   prescribingDoctor: shortTextSchema,
   dosage: shortTextSchema,
   dosesRemaining: z.number().int().min(0),
+  refillThreshold: z.number().int().min(0).optional(),
   price: z.number().min(0),
   pharmacyName: shortTextSchema,
 });
@@ -137,6 +139,7 @@ export const PatchMedicineRequestSchema = z
     prescribingDoctor: shortTextSchema.optional(),
     dosage: shortTextSchema.optional(),
     dosesRemaining: z.number().int().min(0).optional(),
+    refillThreshold: z.number().int().min(0).optional(),
     price: z.number().min(0).optional(),
     pharmacyName: shortTextSchema.optional(),
   })
@@ -145,6 +148,7 @@ export const PatchMedicineRequestSchema = z
       v.prescribingDoctor !== undefined ||
       v.dosage !== undefined ||
       v.dosesRemaining !== undefined ||
+      v.refillThreshold !== undefined ||
       v.price !== undefined ||
       v.pharmacyName !== undefined,
     { message: 'at least one mutable field required' },
